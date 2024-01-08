@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SembakoController;
 use App\Http\Controllers\PendudukController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,9 +25,12 @@ Route::get('/', function () {
 
 Route::resource('penduduk', PendudukController::class);
 
-Route::get('/sembako', function () {
-    return view('sembako.sembako');
-})->name('datasembako');
+// Route::get('/sembako', function () {
+//     return view('sembako.sembako');
+// })->name('datasembako');
+
+Route::resource('sembako', SembakoController::class);
+
 Route::get('/tunai', function () {
     return view('tunai.tunai');
 })->name('datablt');
