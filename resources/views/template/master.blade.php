@@ -28,18 +28,18 @@
           Bantuan Sembako
         </a>
       </li>
+      <li>
+        <a class="text-white" href="{{ route('tunai.index') }}">
+          <i class="bi bi-inboxes-fill mr-2"></i>
+          Bantuan Tunai / BLT
+        </a>
+      </li>
       {{-- <li>
-              <a class="text-white" href="{{route('blt')}}">
-                <i class="bi bi-inboxes-fill mr-2"></i>
-                Bantuan Tunai / BLT
-              </a>
-            </li>
-            <li>
-              <a class="text-white" href="{{route('bedahrumah')}}">
-                <i class="bi bi-stickies-fill mr-2"></i>
-                Bantuan Bedah Rumah
-              </a>
-            </li> --}}
+        <a class="text-white" href="{{ route('bedahrumah') }}">
+          <i class="bi bi-stickies-fill mr-2"></i>
+          Bantuan Bedah Rumah
+        </a>
+      </li> --}}
     </div>
   </div>
   <div></div>
