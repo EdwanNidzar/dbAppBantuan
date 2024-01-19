@@ -3,6 +3,8 @@
 use App\Http\Controllers\SembakoController;
 use App\Http\Controllers\PendudukController;
 use App\Http\Controllers\TunaiController;
+use App\Http\Controllers\RumahController;
+use App\Http\Controllers\PDFController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,7 +40,13 @@ Route::resource('sembako', SembakoController::class);
 
 Route::resource('tunai', TunaiController::class);
 
-
 // Route::get('/rumah', function () {
 //     return view('rumah.rumah');
 // })->name('bedahrumah');
+
+Route::resource('rumah', RumahController::class);
+
+Route::get('/cetak', [PDFController::class, 'cetakPDF'])->name('cetak');
+Route::get('/cetak_penduduk', [PDFController::class, 'cetakPDFPenduduk'])->name('cetak_penduduk');
+Route::get('/cetak_sembako', [PDFController::class, 'cetakPDFSembako'])->name('cetak_sembako');
+Route::get('/cetak_tunai', [PDFController::class, 'cetakPDFTunai'])->name('cetak_tunai');

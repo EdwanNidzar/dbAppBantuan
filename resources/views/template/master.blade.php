@@ -34,12 +34,12 @@
           Bantuan Tunai / BLT
         </a>
       </li>
-      {{-- <li>
-        <a class="text-white" href="{{ route('bedahrumah') }}">
+      <li>
+        <a class="text-white" href="{{ route('rumah.index') }}">
           <i class="bi bi-stickies-fill mr-2"></i>
           Bantuan Bedah Rumah
         </a>
-      </li> --}}
+      </li>
     </div>
   </div>
   <div></div>

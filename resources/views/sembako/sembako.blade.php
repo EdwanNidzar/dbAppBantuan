@@ -7,6 +7,7 @@
 <!-- isi bagian konten -->
 @section('konten')
   <a href="{{ route('sembako.create') }}" type="button" class="btn btn-success">Tambah Data</a>
+  <a href="{{ route('cetak_sembako') }}" target="_blank" type="button" class="btn btn-info">Cetak Laporan</a>
   <hr>
 
   @if (Session::has('pesan'))
